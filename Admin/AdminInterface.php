@@ -310,8 +310,6 @@ interface AdminInterface
     /**
      * Check the current request is given route or not.
      *
-     * TODO: uncomment this method before releasing 4.0
-     *
      * ```
      * $this->isCurrentRoute('create'); // is create page?
      * $this->isCurrentRoute('edit', 'some.admin.code'); // is some.admin.code admin's edit page?
@@ -322,7 +320,7 @@ interface AdminInterface
      *
      * @return bool
      */
-    // public function isCurrentRoute($name, $adminCode = null);
+    public function isCurrentRoute($name, $adminCode = null);
 
     /**
      * Returns true if the admin has a FieldDescription with the given $name.
